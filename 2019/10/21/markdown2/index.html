@@ -22,9 +22,9 @@
 <meta name="keywords" content="" />
 
 
-<meta name="description" content="Hexo+GitHub 搭建自己的专属博客什么是Hexo？安装前提搭建博客功能介绍功能介绍功能介绍功能介绍
-一.什么是Hexo？
-Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用   ..." />
+<meta name="description" content="Hexo+GitHub 搭建自己的专属博客什么是Hexo？安装前提搭建博客本地服务搭建MD文档编写部署
+什么是Hexo？
+Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdo..." />
 
 
 <meta name="robots" content="all" />
@@ -175,11 +175,11 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用   ..." />
     </div>
     
     <div class="post-body post-content">
-        <h2 id="Hexo-GitHub-搭建自己的专属博客"><a href="#Hexo-GitHub-搭建自己的专属博客" class="headerlink" title="Hexo+GitHub 搭建自己的专属博客"></a>Hexo+GitHub 搭建自己的专属博客</h2><p><a href="#什么是Hexo？">什么是Hexo？</a><br><br><a href="#安装前提">安装前提</a><br><br><a href="#搭建博客">搭建博客</a><br><br><a href="#功能介绍">功能介绍</a><br><br><a href="#功能介绍">功能介绍</a><br><br><a href="#功能介绍">功能介绍</a><br><br><a href="#功能介绍">功能介绍</a><br></p>
-<h3 id="一-什么是Hexo？"><a href="#一-什么是Hexo？" class="headerlink" title="一.什么是Hexo？"></a><strong>一.什么是Hexo？</strong></h3><blockquote>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用     Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+        <h2 id="Hexo-GitHub-搭建自己的专属博客"><a href="#Hexo-GitHub-搭建自己的专属博客" class="headerlink" title="Hexo+GitHub 搭建自己的专属博客"></a><strong>Hexo+GitHub 搭建自己的专属博客</strong></h2><p><a href="#什么是Hexo？">什么是Hexo？</a><br><br><a href="#安装前提">安装前提</a><br><br><a href="#搭建博客">搭建博客</a><br><br><a href="#本地服务搭建">本地服务搭建</a><br><br><a href="#MD文档编写">MD文档编写</a><br><br><a href="#部署">部署</a><br></p>
+<h3 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a><strong>什么是Hexo？</strong></h3><blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 </blockquote>
-<h3 id="二-安装前提"><a href="#二-安装前提" class="headerlink" title="二.安装前提"></a><strong>二.安装前提</strong></h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
+<h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a><strong>安装前提</strong></h3><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
 <ul>
 <li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a> (Node.js 版本需不低于 8.6，建议使用 Node.js 10.0 及以上版本)</li>
 <li><a href="https://git-scm.com" target="_blank" rel="noopener">Git</a></li>
@@ -187,14 +187,43 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用   ..." />
 <h4 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1.安装Git"></a>1.安装Git</h4><h4 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h4><h4 id="3-安装-Hexo"><a href="#3-安装-Hexo" class="headerlink" title="3.安装 Hexo"></a>3.安装 Hexo</h4><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要使用 npm 即可完成 Hexo 的安装。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<h3 id="三-搭建博客"><a href="#三-搭建博客" class="headerlink" title="三.搭建博客"></a><strong>三.搭建博客</strong></h3><p>安装 <code>Hexo</code> 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件</p>
+<h3 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a><strong>搭建博客</strong></h3><p>安装 <code>Hexo</code> 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<h3 id="四-本地服务搭建"><a href="#四-本地服务搭建" class="headerlink" title="四.本地服务搭建"></a><strong>四.本地服务搭建</strong></h3><p>Hexo 3.0 把服务器独立成了个别模块，必须先安装 hexo-server 才能使用。</p>
+<h3 id="本地服务搭建"><a href="#本地服务搭建" class="headerlink" title="本地服务搭建"></a><strong>本地服务搭建</strong></h3><p>Hexo 3.0 把服务器独立成了个别模块，必须先安装 <code>hexo-server</code> 才能使用。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
 <p>安装完成后，输入以下命令以启动服务器，您的网站会在 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p><img src="/.com//hexo_server.png" alt></p>
-<p>tgjshjgd</p>
+
+<h3 id="MD文档编写"><a href="#MD文档编写" class="headerlink" title="MD文档编写"></a><strong>MD文档编写</strong></h3><p>hexo新建md文档命令：     <code>hexo new &quot;file name&quot;</code></p>
+<p>默认生成的文件内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: MarkDown（二）：Hexo+GitHub 搭建自己的专属博客</span><br><span class="line">date: 2019-10-21 11:24:01</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">正文...</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a><strong>部署</strong></h3><h4 id="1-修改-config-yml参数"><a href="#1-修改-config-yml参数" class="headerlink" title="1.修改_config.yml参数"></a>1.修改<code>_config.yml</code>参数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-安装-hexo-deployer-git。"><a href="#2-安装-hexo-deployer-git。" class="headerlink" title="2.安装 hexo-deployer-git。"></a>2.安装 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h4 id="3-修改配置"><a href="#3-修改配置" class="headerlink" title="3.修改配置"></a>3.修改配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/yudu233/yudu233.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>repo</td>
+<td align="center">库（Repository）地址</td>
+</tr>
+<tr>
+<td>branch</td>
+<td align="center">分支名称。如果不指定，则默认值为 master</td>
+</tr>
+<tr>
+<td>message</td>
+<td align="center">自定义提交信息</td>
+</tr>
+</tbody></table>
+<h4 id="4-推送至远程库"><a href="#4-推送至远程库" class="headerlink" title="4.推送至远程库"></a>4.推送至远程库</h4><p>生成站点文件并推送至远程库。执行 <code>hexo clean &amp;&amp; hexo deploy</code>命令</p>
 
     </div>
     
@@ -213,18 +242,6 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用   ..." />
 </article>
 <div class="article-nav prev-next-wrap clearfix">
     
-    <a href="/2019/10/21/test/" class="pre-post btn btn-default" title='test'>
-        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-        <span class="hidden-xs">
-            test</span>
-    </a>
-    
-    
-    <a href="/2019/10/21/hello-world/" class="next-post btn btn-default" title='Hello World'>
-        <span class="hidden-lg">下一篇</span>
-        <span class="hidden-xs">
-            Hello World</span><i class="fa fa-angle-right fa-fw"></i>
-    </a>
     
 </div>
 
@@ -262,7 +279,7 @@ new Valine({
             Table of Contents
         </h3>
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-GitHub-搭建自己的专属博客"><span class="toc-text">Hexo+GitHub 搭建自己的专属博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-什么是Hexo？"><span class="toc-text">一.什么是Hexo？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-安装前提"><span class="toc-text">二.安装前提</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-安装Git"><span class="toc-text">1.安装Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-安装Node-js"><span class="toc-text">2.安装Node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-安装-Hexo"><span class="toc-text">3.安装 Hexo</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-搭建博客"><span class="toc-text">三.搭建博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四-本地服务搭建"><span class="toc-text">四.本地服务搭建</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-GitHub-搭建自己的专属博客"><span class="toc-text">Hexo+GitHub 搭建自己的专属博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是Hexo？"><span class="toc-text">什么是Hexo？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装前提"><span class="toc-text">安装前提</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-安装Git"><span class="toc-text">1.安装Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-安装Node-js"><span class="toc-text">2.安装Node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-安装-Hexo"><span class="toc-text">3.安装 Hexo</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建博客"><span class="toc-text">搭建博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地服务搭建"><span class="toc-text">本地服务搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MD文档编写"><span class="toc-text">MD文档编写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署"><span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-修改-config-yml参数"><span class="toc-text">1.修改_config.yml参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-安装-hexo-deployer-git。"><span class="toc-text">2.安装 hexo-deployer-git。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-修改配置"><span class="toc-text">3.修改配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-推送至远程库"><span class="toc-text">4.推送至远程库</span></a></li></ol></li></ol></li></ol>
         
     </div>
 </aside>
