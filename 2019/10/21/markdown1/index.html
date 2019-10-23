@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="西安猿创部落">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content="" />
+
+
+<meta name="description" content="MarkDown（一）：介绍及基本语法使用教程
+执行概要
+前言
+学习目标学习内容
+
+
+什么是MarkDown?
+为什么使用MarkDown?
+哪些IDE对MarkDown的支持?
+MarkDow..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    MarkDown（一）：介绍及基本语法使用教程 |
+    
+    西安猿创部落
+</title>
+
+<link rel="alternate" href="/atom.xml" title="西安猿创部落" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+</head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='Rain'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        西安猿创部落</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                Home</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/工具/"><i class="fa "></i>
+                                工具</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="MarkDown（一）：介绍及基本语法使用教程">
+            
+            MarkDown（一）：介绍及基本语法使用教程
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2019/10/21</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="MarkDown（一）：介绍及基本语法使用教程"><a href="#MarkDown（一）：介绍及基本语法使用教程" class="headerlink" title="MarkDown（一）：介绍及基本语法使用教程"></a>MarkDown（一）：介绍及基本语法使用教程</h1><blockquote>
+<h2 id="执行概要"><a href="#执行概要" class="headerlink" title="执行概要"></a>执行概要</h2><blockquote>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<h3 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h3><h3 id="学习内容"><a href="#学习内容" class="headerlink" title="学习内容"></a>学习内容</h3></blockquote>
+</blockquote>
+</blockquote>
+<p><a href="#什么是MarkDown?">什么是MarkDown?</a><br></p>
+<p><a href="#为什么使用MarkDown?">为什么使用MarkDown?</a><br></p>
+<p><a href="#哪些IDE对MarkDown的支持?">哪些IDE对MarkDown的支持?</a><br></p>
+<p><a href="#MarkDown是否可以和其他文档转换?">MarkDown是否可以和其他文档转换?</a><br></p>
+<p><a href="#常见的MarkDown编辑器有哪些?">常见的MarkDown编辑器有哪些?</a><br></p>
+<p><a href="#MarkDown语法介绍">MarkDown语法介绍</a><br></p>
+<blockquote>
+<p><strong>前言：</strong><br>刘未鹏 曾在《暗时间》中写道:”写作是为了更好的思考”。</p>
+</blockquote>
+<pre><code>只知重复劳动而不去享受生活是不行的，所以，涉猎丰富的内容是非常有必要的，改变的只是对待它的方式。
+节省下真正意义上浪费的时间，用来做更有意义的事。
+笔记/写作首先可以帮助自己理清思路，是自我能力的提升；其次当你的文章得到别人的认可亦或是帮助到别人，这也是自我价值的提升。</code></pre><blockquote>
+<p><strong>学习目标</strong></p>
+</blockquote>
+<p>通过学习，能对<code>Markdown</code>语法有个比较全面的认知，对日常工作写作排版尽量放弃Word、txt等文本工具，改直接用<code>Markdown</code>语言写文档。</p>
+<hr>
+<h2 id="什么是MarkDown"><a href="#什么是MarkDown" class="headerlink" title="什么是MarkDown?"></a>什么是MarkDown?</h2><p><strong>Markdown</strong>是一种轻量级<strong>标记语言</strong>，它以纯文本形式(<em>易读、易写、易更改</em>)编写文档，并最终以HTML格式发布。<br><strong>Markdown</strong>也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。</p>
+<p>它由<a href="http://www.aaronsw.com/" target="_blank" rel="noopener"><strong>Aaron Swartz</strong></a>和<strong>John Gruber</strong>共同设计，<strong>Aaron Swartz</strong>就是于<em>2013年1月11日自杀,有着*</em>开挂<strong>一般人生经历的程序员。维基百科对他的<a href="http://zh.wikipedia.org/wiki/亚伦·斯沃茨" target="_blank" rel="noopener">介绍</a>是：</strong>软件工程师、作家、政治组织者、互联网活动家**<br>他有着足以让你跪拜的人生经历：</p>
+<ul>
+<li><p><strong>14岁</strong>参与RSS 1.0规格标准的制订。</p>
+</li>
+<li><p><strong>2004</strong>年入读<strong>斯坦福</strong>，之后退学。</p>
+</li>
+<li><p><strong>2005</strong>年创建<a href="http://infogami.org/" target="_blank" rel="noopener">Infogami</a>，之后与<a href="http://www.reddit.com/" target="_blank" rel="noopener">Reddit</a>合并成为其合伙人。</p>
+</li>
+<li><p><strong>2010</strong>年创立求进会（Demand Progress），积极参与禁止网络盗版法案（SOPA）活动，最终该提案被撤回。</p>
+</li>
+<li><p><strong>2011</strong>年7月19日，因被控从MIT和JSTOR下载480万篇学术论文并以免费形式上传于网络被捕。</p>
+</li>
+<li><p><strong>2013</strong>年1月自杀身亡。</p>
+</li>
+</ul>
+<p>他的一生被拍成了纪录片《互联网之子》。</p>
+<p>豆瓣上，一万多人给出9.1的高分，评论尽是惋惜、思考、遗憾与行动。</p>
+<p><img src="https://imgsrc.baidu.com/baike/pic/item/94cad1c8a786c9179dcaad30c63d70cf3ac757ea.jpg" alt></p>
+<hr>
+<h2 id="为什么使用MarkDown"><a href="#为什么使用MarkDown" class="headerlink" title="为什么使用MarkDown?"></a>为什么使用MarkDown?</h2><ul>
+<li>它是易读（看起来舒服😌）、易写（语法简单）、易更改（纯文本）。处处体现着极简主义的影子。</li>
+<li>兼容HTML,可以转换为HTML格式发布。</li>
+<li>跨平台使用。</li>
+<li>越来越多的网站如简书、CSDN等都支持Markdown.</li>
+<li>摆脱Word,txt！！！</li>
+<li><a href https: github.com xiaob librarytools"">github</a></li>
+</ul>
+<h3 id="开发工程师编写文档遇到的问题"><a href="#开发工程师编写文档遇到的问题" class="headerlink" title="开发工程师编写文档遇到的问题"></a>开发工程师编写文档遇到的问题</h3><ol>
+<li>工作繁忙，没时间编写绚丽的word, excel ,ppt</li>
+<li>我们好不容易有点时间了，我们去编写一个word 是不是还需要去学习一些编写绚丽多彩的文档所需要的一些知识，真的可费劲了，瞬间觉得有心无力</li>
+<li>我们编写一个文档总担心用户或者阅读人看起来不是那么的美观，阅读费劲</li>
+<li>我们开发工程师项目大部分的文档总会包含一些 代码 之类的，我们用word 粘贴一段代码的格式是这样子的<br> <img src="/2019/10/21/markdown1/C:%5CUsers%5CAdministrator%5CDesktop%5CmarkDown%5CQQ%E6%88%AA%E5%9B%BE20191021120052.png" alt="QQ截图20191021120052"></li>
+</ol>
+<hr>
+<h2 id="哪些IDE对MarkDown的支持"><a href="#哪些IDE对MarkDown的支持" class="headerlink" title="哪些IDE对MarkDown的支持?"></a>哪些IDE对MarkDown的支持?</h2><p><em><code>AndroidStudio</code></em> <strong><code>webStorm</code></strong> <strong><em><code>HBuilder</code></em></strong>  <del><code>vue.js</code></del> 等等</p>
+<hr>
+<h2 id="MarkDown是否可以和其他文档转换"><a href="#MarkDown是否可以和其他文档转换" class="headerlink" title="MarkDown是否可以和其他文档转换?"></a>MarkDown是否可以和其他文档转换?</h2><p>1、转换为html</p>
+<p>2、转换为txt</p>
+<p>3、可以转换为word  （有道云笔记）</p>
+<p>4、PDF</p>
+<hr>
+<h2 id="常见的MarkDown编辑器有哪些"><a href="#常见的MarkDown编辑器有哪些" class="headerlink" title="常见的MarkDown编辑器有哪些?"></a>常见的MarkDown编辑器有哪些?</h2><ul>
+<li>MarkdownPad</li>
+<li>BookPad</li>
+<li>小书匠</li>
+<li>Typora</li>
+<li>Visual Studio Code</li>
+<li>Marxico</li>
+<li>Sublime Text 3</li>
+<li>Mou</li>
+<li>Atom</li>
+<li>Smark</li>
+<li>Haroopad</li>
+<li>CuteMarkEd</li>
+<li>MarkPad</li>
+<li>Cmd Markdown</li>
+<li>FarBox</li>
+<li>Miu</li>
+<li>MacDown</li>
+<li>Ulysses</li>
+<li>Byword</li>
+<li>MaHua</li>
+<li>Dillinger</li>
+<li>CSDN</li>
+<li>简书</li>
+</ul>
+<hr>
+<h2 id="MarkDown语法介绍"><a href="#MarkDown语法介绍" class="headerlink" title="MarkDown语法介绍"></a>MarkDown语法介绍</h2><p><a href="https://www.runoob.com/markdown/md-title.html" target="_blank" rel="noopener">菜鸟教程</a> </p>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    <a href="/2019/10/21/markdown2/" class="pre-post btn btn-default" title='MarkDown（二）：Hexo+GitHub 搭建自己的专属博客'>
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            MarkDown（二）：Hexo+GitHub 搭建自己的专属博客</span>
+    </a>
+    
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'en'.toLowerCase()
+})
+</script>
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            Table of Contents
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MarkDown（一）：介绍及基本语法使用教程"><span class="toc-text">MarkDown（一）：介绍及基本语法使用教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#执行概要"><span class="toc-text">执行概要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#学习目标"><span class="toc-text">学习目标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#学习内容"><span class="toc-text">学习内容</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是MarkDown"><span class="toc-text">什么是MarkDown?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么使用MarkDown"><span class="toc-text">为什么使用MarkDown?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#开发工程师编写文档遇到的问题"><span class="toc-text">开发工程师编写文档遇到的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#哪些IDE对MarkDown的支持"><span class="toc-text">哪些IDE对MarkDown的支持?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MarkDown是否可以和其他文档转换"><span class="toc-text">MarkDown是否可以和其他文档转换?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见的MarkDown编辑器有哪些"><span class="toc-text">常见的MarkDown编辑器有哪些?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MarkDown语法介绍"><span class="toc-text">MarkDown语法介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+</body>
+</html>
